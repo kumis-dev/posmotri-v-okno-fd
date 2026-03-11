@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,12 +51,6 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
-}
-
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .content {
@@ -103,6 +100,7 @@ ol {
   align-items: center;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -121,14 +119,6 @@ ol {
 
 .search-form__textfield:focus-visible {
   outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-}
-
-.search-form__label:has(.search-form__textfield):hover {
-  text-decoration: none;
 }
 
 .search-form__textfield::placeholder {
@@ -151,12 +141,8 @@ ol {
   opacity: 0;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
-}
-
-.search-form__label {
-  cursor: pointer;
 }
 
 .search-form__label:hover {
@@ -165,6 +151,10 @@ ol {
 
 .search-form__label:focus-visible {
   outline: none;
+}
+
+.search-form__label:has(.search-form__textfield):hover {
+  text-decoration: none;
 }
 
 .search-form__label:has(:focus-visible) {
