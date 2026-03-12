@@ -178,7 +178,7 @@ ol {
   display: flex;
   flex-direction: column;
   width: 399px;
-  height: 502px;
+  height: 298px;
   gap: 30px;
   overflow-y: auto;
 }
